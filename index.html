@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <h1>ÉSTE ES MI FORMULARIO</h1>
+    <form name="formulario" action="ejecutar-codigo.php " method="post" id="miFormulario">
+        <div>
+            <label for="miTexto">Usuario</label>
+            <input type="text" id="miTexto" placeholder="Escribe tu usuario" title="Escribe solo en minúsculas
+            y no más de 15 caracteres" pattern="[a-z]{1,15}">
+        </div>
+        <div>
+            <label for="telefono">Teléfono</label>
+            <input type="number" id="telefono" placeholder="Escribe tu Tlf." min="2" max="30">
+
+        </div>
+        <div class="login">
+            <h3>Login</h3>
+            <input type="text" placeholder="Escribe tu nombre" name="nombre" minlength="5"
+             maxlength="40" required>
+             <input type="password" name="pass"
+             placeholder="Contraseña" minlength="11" required>
+        </div>
+        <input type="submit" value="Enviar" >
+
+    </form>
+</body>
+</html>
